@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lavanya — Official Page</title>
+<style>
+  :root{--accent:#ff6b9a;--bg:#0b1020}
+  *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#fff}
+  body{margin:0;min-height:100vh;background:var(--bg);-webkit-font-smoothing:antialiased}
+  .hero{
+    background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url('/mnt/data/WhatsApp Image 2025-09-17 at 09.54.05_9b09e331.jpg');
+    background-size:cover;background-position:center;padding:40px 18px 60px;
+  }
+  .container{max-width:980px;margin:0 auto}
+  header{display:flex;gap:16px;align-items:center}
+  .avatar{width:130px;height:130px;border-radius:14px;overflow:hidden;border:3px solid rgba(255,255,255,0.12)}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  h1{margin:0;font-size:2.05rem}
+  p.lead{margin:6px 0 0;opacity:0.95}
+  .actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+  button.btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:#fff;font-weight:700;cursor:pointer}
+  button.ghost{background:transparent;border:1px solid rgba(255,255,255,0.12)}
+    .btn.ghost {background: #f1f1f1;color: #333;}
+  .qrSection img { width: 50px; border: 1px solid #ddd;background: #250606;display: none;}
+  #qrSection {
+      margin-top: 1px;
+      display: none;
+      text-align: center;}
+  .card{background:rgba(255,255,255,0.03);padding:14px;border-radius:12px;margin-top:18px}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .gallery img{width:100%;height:140px;object-fit:cover;border-radius:10px;display:block}
+  /* Initially blur images */
+  .gallery img.blurred {
+    filter: blur(5px);
+  }
+   .lock-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 20px;
+      color: #fff;}
+  .love-lines{font-size:1.03rem;line-height:1.45;margin-top:8px}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:16px}
+  .chat-box{height:300px;display:flex;flex-direction:column}
+  .messages{flex:1;overflow:auto;padding:10px;border-radius:8px;background:rgba(0,0,0,0.25);margin-bottom:8px}
+  .msg{padding:8px;border-radius:8px;margin-bottom:8px;max-width:78%}
+  .msg.me{background:linear-gradient(90deg, rgba(255,107,154,0.14), rgba(255,107,154,0.06));margin-left:auto}
+  .msg.them{background:rgba(255,255,255,0.04)}
+  .chat-input{display:flex;gap:8px}
+  .chat-input input{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff}
+  .price{font-weight:800;font-size:1.4rem}
+  footer{opacity:0.9;margin-top:22px}
+  .muted{opacity:0.8;font-size:0.95rem}
+  @media(max-width:640px){header{flex-direction:column;align-items:flex-start}.avatar{width:110px;height:110px}}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <header>
+        <div class="avatar"><img src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-19 at 05.33.46_ffa2e867.jpg" alt="Lavanya"></div>
+        <div>
+          <h1>Lavanya</h1>
+          <p class="lead">Welcome🙏🏻— Private talk with love 💕</p>
+          <div class="actions">
+            <button class="btn" id="videoBtn">Start Video Call</button>
+            <button class="btn ghost" id="chatToggle">Open Chat</button>
+            <button class="btn ghost" id="whatsappShow">WhatsApp</button>
+            <button class="btn" id="subscribeBtn">Subscribe — $1499 / month</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="card">
+        <div class="gallery" id="gallery">
+            <!-- Each image with lock  and blur -->
+         <div class="image-wrapper"><img class="blurred" src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-19 at 05.23.32_f50ba831.jpg"><span class="lock-icon">🔒</span></div>
+          <div class="image-wrapper">
+            <img class="blurred" src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-19 at 05.23.33_ec565651.jpg" alt="pic2">
+            <span class="lock-icon">🔒</span>
+          </div>
+          <div class="image-wrapper">
+            <img class="blurred" src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-19 at 05.33.47_09ac9b4c.jpg" alt="pic3">
+            <span class="lock-icon">🔒</span>
+          </div>
+          <div class="image-wrapper">
+            <img class="blurred" src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-19 at 05.34.08_caede6a4.jpg" alt="pic4">
+            <span class="lock-icon">🔒</span>
+          </div>
+          <div class="image-wrapper">
+            <img class="blurred" src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-19 at 05.58.00_1a0ca226.jpg" alt="pic5">
+            <span class="lock-icon">🔒</span>
+          </div>
+          <div class="image-wrapper">
+            <img class="blurred" src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-19 at 05.58.02_cc4811da.jpg" alt="pic6">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+
+        <div class="love-lines">
+          <strong>Lovely lines:</strong>
+          <p>"In a world of noise, your smile is my favorite melody."</p>
+          <p>"Every message from you feels like sunlight on a rainy day."</p>
+        </div>
+
+        <!-- Add Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="features">
+  <div class="card">
+    <h3><i class="fas fa-video"></i> Live Video Calls</h3>
+    <p id="videoDesc">Start a private video room. (Available after subscription.)</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-comments"></i> Chat</h3>
+    <p id="chatDesc">Private chat — available after subscription.</p>
+    <div id="chatArea" style="display:none;" class="chat-box">
+      <div class="messages" id="messages"></div>
+      <div class="chat-input">
+        <input id="chatInput" placeholder="Type a message...">
+        <button class="btn" id="sendBtn"><i class="fas fa-paper-plane"></i> Send</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><i class="fab fa-whatsapp"></i> WhatsApp Connect</h3>
+    <p id="whTxt">WhatsApp number will be shown after payment.</p>
+    <div id="whButtonArea"></div>
+  </div>
+</div>
+<!-- Add Font Awesome (if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="card">
+  <h3><i class="fas fa-crown" style="color:gold;"></i> Subscribe — $1499 / month</h3>
+  <p class="price">₹1499 (or $1499)</p>
+  <p>Pay via UPI apps: PhonePe / GPay / Paytm / other UPI apps.</p>
+  
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+    <button class="btn" id="payNow"><i class="fas fa-wallet"></i> Pay via UPI (open app)</button>
+    <button class="btn ghost" id="showQR"><i class="fas fa-upload"></i> Upload Payment Screenshot</button>
+  </div>
+  
+  <p class="muted" style="margin-top:8px">use scanner (take screenshot & pay).</p>
+  
+  <!-- QR Code Section -->
+  <div id="qrSection">
+    <p><i class="fas fa-qrcode"></i> Scan this QR to Pay:</p>
+    <img src="C:\Users\Sunil\.vscode\vcall\WhatsApp Image 2025-09-17 at 20.41.49_a0aecf57.jpg" alt="UPI QR Code">
+  </div>
+</div>
+
+    
+          </div>
+        </div>
+
+  <script>
+    const payNowBtn = document.getElementById("payNow");
+    const qrSection = document.getElementById("qrSection");
+
+    payNowBtn.addEventListener("click", () => {
+      qrSection.style.display = (qrSection.style.display === "none" || qrSection.style.display === "") 
+        ? "block" 
+        : "none";
+    });
+  </script>
+      <footer>
+        <p class="muted">Made with ❤️ by Lavanya. <strong>thanks😘</strong></p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Config
+    const UPI_ID = 'vaishnavi279@fam';
+    const UPI_NAME = 'Lavanya';
+    const AMOUNT = '1499'; // rupees
+    const WH_NUMBER = '+917204383371';
+    const STORAGE_KEY = 'Lavanya_paid';
+
+    // Utility: check paid
+    function isPaid(){ return localStorage.getItem(STORAGE_KEY) === 'true'; }
+
+    // Unlock UI when paid
+    function updateUI(){
+      if(isPaid()){
+        document.getElementById('videoDesc').textContent = 'Video calls unlocked — click Start Video Call to open a private room.';
+        document.getElementById('chatDesc').textContent = 'Chat unlocked — send messages below.';
+        document.getElementById('chatArea').style.display = 'flex';
+        document.getElementById('whTxt').innerHTML = 'WhatsApp: <strong>' + WH_NUMBER + '</strong>';
+        document.getElementById('whButtonArea').innerHTML = '<a class="btn" href="https://wa.me/' + WH_NUMBER.replace(/\+/g, '') + '" target="7204383371">Open WhatsApp</a>';
+      } else {
+        // locked
+        document.getElementById('videoDesc').textContent = 'Start a private video room (locked — requires subscription).';
+        document.getElementById('chatDesc').textContent = 'Chat locked — subscribe to unlock.';
+        document.getElementById('chatArea').style.display = 'none';
+        document.getElementById('whTxt').textContent = 'WhatsApp number will be shown after payment.';
+        document.getElementById('whButtonArea').innerHTML = '';
+      }
+    }
+    updateUI();
+
+    // Video button: only allow if paid; else prompt to pay
+    document.getElementById('videoBtn').addEventListener('click', ()=>{
+      if(!isPaid()){
+        if(confirm('Video calls are available only for subscribers. Pay now to unlock?')) {
+          triggerPaymentPopup();
+        }
+        return;
+      }
+      // Start Jitsi Meet in new window (random room)
+      const room = 'RitikaRoom-' + Math.random().toString(36).slice(2,9);
+      window.open('https://meet.jit.si/' + room, '_blank', 'noopener');
+    });
+
+    // Chat toggle
+    document.getElementById('chatToggle').addEventListener('click', ()=>{
+      if(!isPaid()){
+        if(confirm('Chat is available only for subscribers. Pay now to unlock?')) { triggerPaymentPopup(); }
+        return;
+      }
+      const area = document.getElementById('chatArea');
+      area.style.display = area.style.display === 'none' ? 'flex' : 'none';
+    });
+
+    // Simple in-browser chat (local only)
+    const messages = document.getElementById('messages');
+    const input = document.getElementById('chatInput');
+    const sendBtn = document.getElementById('sendBtn');
+    function appendMsg(text, cls){
+      const d = document.createElement('div'); d.className = 'msg ' + cls; d.textContent = text; messages.appendChild(d);
+      messages.scrollTop = messages.scrollHeight;
+    }
+    sendBtn.addEventListener('click', ()=>{
+      if(!isPaid()){ alert('Please subscribe to use chat.'); return; }
+      const v = input.value.trim(); if(!v) return; appendMsg(v,'me'); input.value='';
+      setTimeout(()=>appendMsg('Thanks — I will reply as soon as I can ❤️','them'),700);
+    });
+    input.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') sendBtn.click(); });
+
+    // Payment: build UPI deep link
+    function buildUpiUrl(amount){
+      // upi://pay?pa=UPIID&pn=NAME&am=AMOUNT&cu=INR
+      return 'upi://pay?pa=' + encodeURIComponent(UPI_ID) +
+             '&pn=' + encodeURIComponent(UPI_NAME) +
+             '&am=' + encodeURIComponent(amount) +
+             '&cu=INR';
+    }
+
+    // Open a popup page that shows QR + "Open in UPI app" link + "I've Paid" button
+    function openPaymentWindow(amount){
+      const upiUrl = buildUpiUrl(amount);
+      // Google chart QR with the upi URL encoded
+      const qrSrc = 'https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=' + encodeURIComponent(upiUrl);
+
+      const w = window.open('', '_blank', 'width=520,height=720');
+      if(!w){ alert('Please allow popups for this site.'); return; }
+
+      const html = `
+        <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Pay ₹${amount} — Ritika</title>
+        <style>body{font-family:Inter,Arial;margin:20px;background:#f7f7fb;color:#111}h2{margin-top:0} .box{background:#fff;padding:16px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.08)} button{padding:10px 14px;border-radius:10px;border:none;background:${getComputedStyle(document.documentElement).getPropertyValue('--accent') || '#ff6b9a'};color:#fff;font-weight:700;cursor:pointer}</style>
+        </head><body>
+        <h2>Pay ₹${amount} to Lavanya</h2>
+        <div class="box">
+          <p><strong>UPI ID:</strong> ${UPI_ID}</p>
+          <p><strong>Amount:</strong> ₹${amount}</p>
+          <p><a href="${upiUrl}"><button>Open in UPI app (PhonePe / GPay / Paytm)</button></a></p>
+          <p style="margin-top:12px">Or scan this QR code with your UPI app:</p>
+          <img src="${qrSrc}" alt="UPI QR" style="width:260px;height:260px;display:block;margin-top:8px">
+          <p style="margin-top:12px;color:#555">After completing the payment, press <strong>"I've Paid"</strong> to unlock features on the original page.</p>
+          <p style="margin-top:10px"><button id="paidBtn">I've Paid — Unlock</button></p>
+        </div>
+        <script>
+          document.getElementById('paidBtn').addEventListener('click', function(){
+            try{ localStorage.setItem('${STORAGE_KEY}','true'); alert('Thanks — access unlocked on the original page.'); window.close(); }
+            catch(e){ alert('Could not save confirmation locally. Please go back to the original page and click "I Paid" there.'); }
+          });
+        </script>
+        </body></html>
+     <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lavanya Platform — Footer Example</title>
+<style>
+  :root{
+    --bg:#0c1116;
+    --panel:#0b1217;
+    --muted:#9aa8b3;
+    --accent:#00d18a;
+    --glass:rgba(255,255,255,0.02);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#e6eef6;background:#0f1724}
+  .page-wrap{min-height:100vh;display:flex;flex-direction:column}
+  .content{flex:1;padding:40px;max-width:1200px;margin:0 auto;color:#9fb0bf}
+  /* Footer */
+  footer.site-footer{background:linear-gradient(180deg,var(--panel),#071021);padding:28px 24px 18px;border-top:1px solid rgba(255,255,255,0.03)}
+  .footer-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:18px;justify-content:space-between}
+  .left, .center, .right {display:flex;align-items:center;gap:14px}
+  /* left column (made with + social) */
+  .made-with{font-size:0.95rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+  .heart{color:#ff4d6d}
+  .social {display:flex;gap:8px}
+  .social a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--glass);border:1px solid rgba(255,255,255,0.02);text-decoration:none}
+  .social svg{width:16px;height:16px;display:block;fill:currentColor;color:#e6eef6;opacity:0.95}
+  /* center (brand box) */
+  .brand-box{display:flex;align-items:center;gap:12px;padding:12px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+  .brand-mark{width:46px;height:46px;border-radius:6px;display:grid;place-items:center;background:#071826;border:1px solid rgba(255,255,255,0.03)}
+  .brand-mark svg{width:28px;height:28px}
+  .brand-meta{display:flex;flex-direction:column;line-height:1}
+  .brand-meta b{font-size:0.98rem}
+  .brand-meta small{font-size:0.78rem;color:var(--muted)}
+  /* right links */
+  .footer-links{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+  .footer-links a{color:var(--muted);text-decoration:none;font-size:0.95rem}
+  .footer-links a:hover{color:var(--accent)}
+  .bottom-row{width:100%;margin-top:18px;border-top:1px solid rgba(255,255,255,0.03);padding-top:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .copyright{color:var(--muted);font-size:0.9rem;display:flex;align-items:center;gap:10px}
+  .small-brand{display:flex;align-items:center;gap:10px}
+  .small-brand svg{width:36px;height:36px;opacity:0.95}
+  .play-badge img{height:2px;display:block}
+  /* responsive */
+  @media (max-width:760px){
+    .footer-inner{flex-direction:column;align-items:flex-start}
+    .footer-links{align-items:flex-start}
+    .bottom-row{flex-direction:column;align-items:flex-start;gap:10px}
+  }
+  /* modal */
+  .modal-backdrop{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:1200}
+  .modal{background:#fff;color:#071226;border-radius:12px;max-width:760px;width:100%;padding:20px;box-shadow:0 20px 60px rgba(2,6,23,0.6);max-height:86vh;overflow:auto}
+  .modal h3{margin:0 0 10px}
+  .modal .close{background:transparent;border:0;font-size:1.2rem;color:#64748b;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+  <main class="content" role="main">
+    <h1>In Just One Call: A Story of Connection</h1>
+    <p>"In just one call, your smile became my favorite notification."
+It’s more than poetry. It’s truth. In a world where our attention is pulled in a hundred directions, where notifications are often noise — your face, your voice, your laugh — they became music. And your smile became the one alert I will never mute.
+Maybe that’s what love is in this digital age — not grand gestures or poetic confessions, but shared screens and pixelated grins. Maybe love is knowing that someone, somewhere, is watching the same blinking cursor, waiting for you to type “hi.” And maybe, just maybe, it’s about holding onto those small, beautiful moments that glow within us long after the screen goes dark.
+You never meant to change my world with one smile. But you did. And now, no matter where life takes us, a part of me will always light up at the sound of a video call — just in case it’s you again.
+Because the moment our eyes met through that screen and you smiled, I stopped seeing my phone as a device. It became a portal — a window to something real. To someone real.
+
+To you..</p>
+    <div style="height:1px"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <!-- left -->
+      <div class="left" aria-hidden="false">
+        <div class="made-with">
+          <span>Made with</span>
+          <span class="heart" aria-hidden="true">❤️</span>
+          <span>in India</span>
+        </div>
+
+        <div class="social" aria-label="Social links">
+  <a href="https://www.facebook.com/share/16sJ15gmex/" aria-label="Facebook" title="Facebook" target="https://www.facebook.com/share/16sJ15gmex/" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8.9v-2.9h1.5V9.3c0-1.5.9-2.4 2.3-2.4.7 0 1.5.1 1.5.1v1.6h-.8c-.8 0-1 .5-1 1v1.3h1.7l-.3 2.9h-1.4v7A10 10 0 0 0 22 12z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.instagram.com/itz_lavanya_prince?igsh=MjRiZzN2bWRheGky" aria-label="Instagram" title="Instagram" target="https://www.instagram.com/itz_lavanya_prince?igsh=MjRiZzN2bWRheGky" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zM18.6 6.3a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.snapchat.com/add/lavanya251535?share_id=Sp_9LoZ3iEY&locale=en-US" aria-label="Snapchat" title="Snapchat" target="https://www.snapchat.com/add/lavanya251535?share_id=Sp_9LoZ3iEY&locale=en-US" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8.98h4V21H3zM9 8.98h3.8v1.6h.1a4.2 4.2 0 0 1 3.8-2.1c4 0 4.7 2.6 4.7 6V21H19v-6.2c0-1.5 0-3.4-2.1-3.4-2.1 0-2.5 1.6-2.5 3.3V21H9z"/>
+    </svg>
+  </a>
+
+  <a href="https://youtube.com/@vs-hb7pp?si=b59tP5Jw21ROrvbk" aria-label="YouTube" title="YouTube" target="https://youtube.com/@vs-hb7pp?si=b59tP5Jw21ROrvbk" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M23 7.2a3 3 0 0 0-2.1-2.1C18.9 4 12 4 12 4s-6.9 0-8.9.9A3 3 0 0 0 .9 7.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .9 4.8 3 3 0 0 0 2.1 2.1C5.1 20 12 20 12 20s6.9 0 8.9-.9a3 3 0 0 0 2.1-2.1A31.8 31.8 0 0 0 24 12a31.8 31.8 0 0 0-.9-4.8zM9.8 15.5V8.5l6.2 3.5z"/>
+    </svg>
+  </a>
+
+        </div>
+      </div>
+
+      <!-- center brand -->
+      <div class="center" aria-label="Brand">
+        <div class="brand-box">
+          <div class="brand-mark" aria-hidden="true">
+            <!-- Brand logo with L -->
+            <svg viewBox="0 0 24 24" fill="L" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="5"/>
+              <!-- Letter L -->
+        <text x="12" y="36" font-size="26" font-family="Arial, sans-serif" font-weight="bold" fill="#7EE7C4">L</text>
+              <path d="M6 12h12" stroke="#7EE7C4" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="brand-meta">
+            <b>Lavanya Platform</b>
+            <small> Emotional Support Platform</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- right links -->
+      <div class="right footer-links" role="navigation" aria-label="Footer links">
+        <a href="#" id="openTerms">Privacy Policy, T&C, and R&C</a>
+        <a href="#" aria-label="About Us">About Us</a>
+      </div>
+
+      <!-- bottom row -->
+    </div>
+
+    <div class="bottom-row">
+      <div class="small-brand">
+        <div class="copyright">
+          <div style="opacity:0.9">© <span id="year"></span> Lavanya Platform — All rights reserved</div>
+        </div>
+
+        <!-- small boxed logo on the left bottom (like your screenshot) -->
+        <div style="margin-left:12px;display:flex;align-items:center;">
+          <div style="width:56px;height:36px;border-radius:6px;background:rgba(255,255,255,0.02);display:grid;place-items:center;border:1px solid rgba(255,255,255,0.03)">
+            <!-- tiny logo -->
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+              <rect width="24" height="24" rx="5" fill="#071826"/>
+              <text x="6" y="16" fill="#cdeff3" font-size="9" font-family="monospace">R</text>
+            </svg>
+          </div>
+          <div style="font-size:0.85rem;color:var(--muted);margin-left:10px">
+            <div style="font-weight:600">A product of Lavanya Wellness Pvt Ltd</div>
+            <div style="margin-top:2px">© 2021-<span id="year2"></span> Lavanya. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- play store / app badge -->
+      <div class="play-badge" style="margin-left:auto">
+        <!-- replace src with your actual Play Store badge -->
+        <a href="#" aria-label="Get it on Google Play">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+               alt="Get it on Google Play" style="height:38px;"/>
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- Terms modal -->
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+  <div class="modal" role="document">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3 id="termsTitle">Privacy Policy, Terms & Conditions and Refund & Return</h3>
+      <button class="close" id="closeModal" aria-label="Close">✕</button>
+    </div>
+    <div style="color:#334155;margin-top:10px;line-height:1.5">
+      <!-- Replace below with your full legal text -->
+      <p><strong>1. Acceptance of Terms.</strong> By accessing Ritika Platform you agree to the following terms.</p>
+      <p><strong>2. Privacy.</strong> We collect and process personal data as described in our Privacy Policy.</p>
+      <p><strong>3. Refunds & Returns.</strong> Any paid services have their own refund policy — contact support for details.</p>
+      <p style="font-style:italic;color:#7b8b98">This is sample placeholder text. Replace with the final legal documents reviewed by counsel for your company.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // small interactions and accessibility
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year2').textContent = new Date().getFullYear();
+
+  const openTerms = document.getElementById('openTerms');
+  const modalBackdrop = document.getElementById('modalBackdrop');
+  const closeModal = document.getElementById('closeModal');
+
+  openTerms.addEventListener('click', function (e) {
+    e.preventDefault();
+    modalBackdrop.style.display = 'flex';
+    // focus first focusable inside modal
+    closeModal.focus();
+  });
+  closeModal.addEventListener('click', function () {
+    modalBackdrop.style.display = 'none';
+  });
+  modalBackdrop.addEventListener('click', function (e) {
+    if (e.target === modalBackdrop) modalBackdrop.style.display = 'none';
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') modalBackdrop.style.display = 'none';}
+  });
+</script>
+</body>
+</html>
